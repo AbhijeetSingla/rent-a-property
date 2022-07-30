@@ -1,0 +1,25 @@
+.sub-stats {
+    justify-content: space-between;
+}
+
+.price-head {
+    justify-content: space-between;
+}
+
+.like-icon-container {
+    border-width: 1px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: red;
+    height: 2rem;
+    width: 2rem;
+    place-content: center;
+}
+
+.like-icon {
+    height: 1.3rem;
+}
+
+.blog-card{
+    height: 500px;
+}

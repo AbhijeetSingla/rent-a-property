@@ -1,2 +1,2 @@
-# rent-a-property
- design test for reunion
+# About
+This is design test provided by the company Reunion.

@@ -1,0 +1,23 @@
+.search-filter-container {
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+}
+
+.search-filter-container > h1 {
+    font-size: 3rem;
+}
+
+input[type="range"]::before {
+    content: attr(min);
+    position: relative;
+    top: 16px;
+    color: white;
+}
+
+input[type="range"]::after {
+    content: attr(currentvalue);
+    position: relative;
+    top: 16px;
+    color: white;
+    display: inline-block;
+}
