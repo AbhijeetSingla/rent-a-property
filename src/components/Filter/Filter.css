@@ -101,22 +101,6 @@ input[type="range"]::after {
     content: attr(currentvalue);
 }
 
-/* input[type=range] {
-    -webkit-appearance: none;
-    background: transparent;
-}
-
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 1px solid #7167eb;
-    border-radius: 3px;
-    height: 9px;
-    width: 18px;
-    background: #7167eb;
-    cursor: pointer;
-    margin-top: -14px;
-} */
-
 select {
     background-color: transparent;
     border: none;
