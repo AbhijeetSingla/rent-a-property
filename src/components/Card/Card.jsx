@@ -15,7 +15,7 @@ function Card( {property} ) {
                     <div>
                         <p>Move-in date {property.date}</p>
                         <div className='flex price-head'>
-                            <h1 className="blog-card-heading">${property.price}<small>/month</small> </h1>
+                            <h1 className="blog-card-heading"><span className='text-color-primary'>${property.price}</span> <small>/month</small> </h1>
                             <div className='like-icon-container flex'>
                                 <img src={likeIcon} alt="bookmark" className='filter-color-scheme like-icon' />
                             </div>

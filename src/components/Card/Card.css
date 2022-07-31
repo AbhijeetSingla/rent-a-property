@@ -34,3 +34,8 @@
 .blog-card{
     height: 500px;
 }
+
+.blog-card-heading small {
+    color: hsl(0, 0%, 30%);
+    font-size: 1rem;
+}
