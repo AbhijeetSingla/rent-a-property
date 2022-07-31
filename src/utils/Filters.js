@@ -11,7 +11,7 @@ function priceFilter (propertyArr, price) {
 }
 
 function typeFilter (propertyArr, type) {
-   return type!==""? propertyArr.filter(element=> element.type===type) : propertyArr;
+   return type!=="All"? propertyArr.filter(element=> element.type===type) : propertyArr;
 }
 
 export { locationFilter, dateFilter, priceFilter, typeFilter };

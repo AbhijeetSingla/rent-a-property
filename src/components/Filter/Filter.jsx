@@ -10,7 +10,7 @@ function Filter({data}) {
     const [filterPrice, setFilterPrice] = useState(Math.ceil(Math.max(...priceSet)));
     const [filterLocation, setFilterLocation] = useState("All");
     const [filterDate, setFilterDate] = useState("");
-    const [filterType, setFilterType] = useState("");
+    const [filterType, setFilterType] = useState("All");
     
     function filterSearch (event) {
         event.preventDefault();
@@ -46,12 +46,13 @@ function Filter({data}) {
                     <div className='flex sub-filter'>
                         <label htmlFor="propertytype">Property Type: </label>
                         <select name="propertytype" id="propertytype" onChange={(e) => setFilterType(e.target.value)}>
+                        <option value="All">Select a type</option>
                             {typeSet.map((type) => <option key={type} value={type}>{type}</option>)}
                         </select>
                     </div>
                     <hr />
                     <div className='flex sub-filter'>
-                        <button type="submit" className='primary-link'>Search</button>
+                        <button type="submit" className='primary-link submit-button'>Search</button>
                     </div>
                 </div>
             </form>
