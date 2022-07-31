@@ -35,7 +35,16 @@
     height: 500px;
 }
 
-.blog-card-heading small {
-    color: hsl(0, 0%, 30%);
-    font-size: 1rem;
+@media (prefers-color-scheme: light) {
+    .blog-card-heading small {
+        color: hsl(0, 0%, 30%);
+        font-size: 1rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .blog-card-heading small {
+        color: hsl(0, 0%, 50%);
+        font-size: 1rem;
+    }
 }
