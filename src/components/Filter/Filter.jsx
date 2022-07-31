@@ -6,7 +6,7 @@ function Filter({data}) {
     const locationSet = Array.from(new Set(data.properties.map((property) => property.state)).values());
     const typeSet = Array.from(new Set(data.properties.map((property) => property.type)).values());
     const priceSet = Array.from(new Set(data.properties.map((property) => property.price)).values());
-    const {propertyState,propertyDispatch} = useProperty();
+    const {propertyDispatch} = useProperty();
     const [filterPrice, setFilterPrice] = useState(Math.ceil(Math.max(...priceSet)));
     const [filterLocation, setFilterLocation] = useState("All");
     const [filterDate, setFilterDate] = useState("");
