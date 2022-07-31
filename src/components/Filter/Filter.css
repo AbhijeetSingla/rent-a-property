@@ -16,10 +16,41 @@
     justify-content: center;
 }
 
+.submit-button{
+    border-radius: 8px;
+}
+
+::-webkit-datetime-edit { 
+    padding: 0.9rem; 
+    background-color: transparent;
+}
+
+
+::-webkit-datetime-edit-text { 
+    padding: 0 0.3rem; 
+}
+
+
+@media (prefers-color-scheme: dark) {
+    ::-webkit-datetime-edit-month-field { color:var(--text-color); }
+    ::-webkit-datetime-edit-day-field { color: var(--text-color); }
+    ::-webkit-datetime-edit-year-field { color: var(--text-color); }
+    ::-webkit-calendar-picker-indicator { filter: invert(99%) sepia(40%) saturate(30%) hue-rotate(196deg) brightness(113%) contrast(88%); }
+    ::-webkit-datetime-edit-text { color: var(--text-color); }
+    input[type="range"]::before, input[type="range"]::after{
+        color: white;
+    }
+}
+
+
+input[type="date"]{
+    background: none;
+    border: none;
+}
+
 input[type="range"]::before, input[type="range"]::after{
     position: relative;
     top: 16px;
-    color: white;
 }
 
 input[type="range"]::before {
@@ -32,9 +63,11 @@ input[type="range"]::after {
 }
 
 select {
-    background-color: var(--bg-color);
+    background-color: transparent;
+    border: none;
     color: var(--blog-card-text-color);
-    padding-inline-start: 1rem;
+    /* padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem; */
     padding-block-start: 0.9rem;
     padding-block-end: 0.9rem;
     cursor: pointer;
