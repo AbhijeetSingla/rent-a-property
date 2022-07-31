@@ -1,9 +1,28 @@
+import './Navbar.css'
+import logo from '../../media/icons/e_logo.svg';
 function Navbar() {
-    return ( 
+    return (
         <>
-            
-        </>
-     );
-}
+            <nav className="nav-base flex">
+                <a href='/' className="txt-decor-none">
+                    <div className="primary-nav-logo flex">
+                        <img src={logo} alt="Navbar logo" width="50px" />
+                        <h3 >Estatery</h3>
+                    </div>
+                </a>
+                <input type="checkbox" id='nav-toggle' className='nav-toggle d-none'/>
+                <ul className="list-style-none flex mobile-nav">
+                    <li>Rent</li>
+                    <li>Buy</li>
+                    <li>Sell</li>
+                    <li>Manage Property</li>
+                    <li>Resources</li>
+                </ul>
+                <label htmlFor='nav-toggle' className='mobile-nav-button'><span className='d-none'>Menu</span></label>
+            </nav>
 
+        </>
+    );
+  }
+  
 export default Navbar;

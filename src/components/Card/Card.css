@@ -1,5 +1,11 @@
+.stats {
+    justify-content: center;
+    --gap: 3.5rem;
+}
+
 .sub-stats {
-    justify-content: space-between;
+    justify-content: center;
+    --gap: 0.5rem;
 }
 
 .price-head {
@@ -13,7 +19,8 @@
     border-color: red;
     height: 2rem;
     width: 2rem;
-    place-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .like-icon {

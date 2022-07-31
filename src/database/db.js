@@ -11,8 +11,41 @@ const data = {
         state: "California"
       },
       date: "30-10-2022",
+      bathroom:"4",
       beds: "9",
       cover: "house-1.webp",
+      area: "6x7.5",
+      price: 8038
+    },
+    {
+      id: uuid(),
+      type: "Flat",
+      state: "California",
+      location: {
+        address: "2622 Ridge Road",
+        city: "Los Angeles",
+        state: "California"
+      },
+      date: "30-10-2022",
+      bathroom:"2",
+      beds: "4",
+      cover: "house-10.webp",
+      area: "5x7",
+      price: 4038
+    },
+    {
+      id: uuid(),
+      type: "Flat",
+      state: "California",
+      location: {
+        address: "2622 Ridge Road",
+        city: "Los Angeles",
+        state: "California"
+      },
+      date: "30-10-2022",
+      bathroom:"2",
+      beds: "3",
+      cover: "house-9.webp",
       area: "20",
       price: 8038
     },
@@ -26,6 +59,7 @@ const data = {
         state: "California"
       },
       date: "23-11-2022",
+      bathroom:"2",
       beds: "8",
       cover: "house-2.webp",
       area: "20",
@@ -41,6 +75,7 @@ const data = {
         state: "Michigan"
       },
       date: "23-11-2022",
+      bathroom:"2",
       beds: "8",
       cover: "house-3.webp",
       area: "20",
@@ -56,6 +91,7 @@ const data = {
         state: "New York state"
       },
       date: "22-10-2022",
+      bathroom:"2",
       beds: "8",
       cover: "house-4.webp",
       area: "20",
@@ -71,6 +107,7 @@ const data = {
         state: "California"
       },
       date: "23-11-2022",
+      bathroom:"2",
       beds: "7",
       cover: "house-5.webp",
       area: "20",
@@ -86,6 +123,7 @@ const data = {
         state: "Massachusetts"
       },
       date: "21-10-2022",
+      bathroom:"2",
       beds: "5",
       cover: "house-6.webp",
       area: "20",
@@ -101,6 +139,7 @@ const data = {
         state: "Florida"
       },
       date: "22-08-2022",
+      bathroom:"2",
       beds: "4",
       cover: "house-7.webp",
       area: "20",
@@ -116,6 +155,7 @@ const data = {
         state: "New Mexico"
       },
       date: "10-10-2022",
+      bathroom:"2",
       beds: "5",
       cover: "house-8.webp",
       area: "20",
@@ -131,6 +171,7 @@ const data = {
         state: "Florida"
       },
       date: "22-05-2022",
+      bathroom:"2",
       beds: "6",
       cover: "house-9.webp",
       area: "20",

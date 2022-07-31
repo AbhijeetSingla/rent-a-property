@@ -10,7 +10,7 @@ export function PropertyProvider({children}) {
         state:"All",
         date:"",
         price:Math.max(...priceSet),
-        propertyType:""
+        type:""
     });
     
     return <PropertyContext.Provider value={{propertyState,propertyDispatch}}>{children}</PropertyContext.Provider>

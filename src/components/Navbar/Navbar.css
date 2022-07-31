@@ -1,0 +1,112 @@
+.nav-base-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.nav-base div.mobile-nav {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav-button{
+    display: none;
+}
+
+@media (max-width: 35em) {
+
+    .nav-base{
+        /* position:fixed; */
+        z-index: 9999;
+    }
+
+    ul.mobile-nav{
+        position: fixed;
+        margin-inline-end: 0;
+        inset-inline-start: 30%;
+        inset-inline-end: 0;
+        inset-block-start: 0;
+        inset-block-end: 0;
+        padding-inline-start: 3rem;
+        padding-inline-end: 3rem;
+        padding-block-start: min(30vh, 10rem);
+        padding-block-end: min(30vh, 10rem);
+        background-color: var(--bg-color);
+        flex-direction: column;
+    }
+
+    ul.mobile-nav * {
+        color: var(--blog-card-text-color);
+    }
+
+    .mobile-nav-button {
+        display:unset;
+        position: fixed;
+        width: 1.5rem;
+        height: 2px;
+        inset-inline-end: 2rem;
+        inset-block-start: 3rem;
+        border: none;
+        background-color: var(--text-color);
+        transition: width 150ms ease-in;
+    }
+
+    .mobile-nav-button::before, .mobile-nav-button::after {
+        content: "";
+        position: absolute;
+        background-color: var(--text-color);
+        height: 100%;
+        width: 100%;
+        transition: transform 150ms ease-in;
+    }
+
+    .mobile-nav-button::before {
+        bottom: 7px;
+    }
+
+    .mobile-nav-button::after {
+        top: 7px;
+    }
+
+    .nav-toggle:checked ~ .mobile-nav-button {
+        background-color: var(--blog-card-text-color);
+        width: 0;
+    }
+
+    .nav-toggle:checked ~ .mobile-nav-button::before {
+        background-color: var(--blog-card-text-color);
+        transform: translateX(-20px) rotate(50deg);
+        bottom: 0;
+        width: 1.5rem;
+    }
+
+    .nav-toggle:checked ~ .mobile-nav-button::after {
+        background-color: var(--blog-card-text-color);
+        transform: translateX(-20px) rotate(-50deg);
+        top: 0;
+        width: 1.5rem;
+    }
+
+    .nav-toggle ~ ul.mobile-nav{
+        transform: scale(0, 1);
+        transform-origin: right;
+        transition-delay: 0ms;
+        transition-duration: 150ms;
+        transition-property: transform;
+        transition-timing-function: ease-in-out;
+    }
+
+    .nav-toggle:checked ~ ul.mobile-nav{
+        transform: scale(1, 1);
+    }
+
+
+
+    @supports (backdrop-filter: blur(2rem)) {
+        ul.mobile-nav {
+            background-color: var(--nav-bg-color);
+            backdrop-filter: blur(2rem);
+        }
+    }
+
+}

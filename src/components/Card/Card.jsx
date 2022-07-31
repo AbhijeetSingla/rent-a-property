@@ -6,7 +6,7 @@ import './Card.css';
 
 function Card( {property} ) {
     return ( 
-        <a href="/" className ="txt-decor-none blog-card container-base" >
+        <div className ="txt-decor-none blog-card container-base" >
             <div className="blog-container flex">
                 <div className="blog-card-cover">
                     <img src={require(`../../media/images/${property?.cover}`)} alt={property.location} />
@@ -15,15 +15,17 @@ function Card( {property} ) {
                     <div>
                         <p>Move-in date {property.date}</p>
                         <div className='flex price-head'>
-                            <h1 className="blog-card-heading">${property.price}/month</h1>
-                            <div className='like-icon-container flex'> <img src={likeIcon} alt="bookmark" className='filter-color-scheme like-icon' /></div>
+                            <h1 className="blog-card-heading">${property.price}<small>/month</small> </h1>
+                            <div className='like-icon-container flex'>
+                                <img src={likeIcon} alt="bookmark" className='filter-color-scheme like-icon' />
+                            </div>
                         </div>
                         <p>{property.location.city}</p>    
                         <small className="blog-card-para">{property.location.address}, {property.location.city}, {property.location.state}</small>
                     </div>
                     <div>
                         <hr />
-                        <div className="blog-stat stats flex">
+                        <div className="stats flex">
                             <div className="flex sub-stats">
                                 <img src={bedIcon} alt="read time" width="16px" className="filter-color-scheme" />
                                 <p>{property.beds}</p>
@@ -40,7 +42,7 @@ function Card( {property} ) {
                     </div>
                 </div>
             </div>
-        </a>
+        </div>
      );
 }
 

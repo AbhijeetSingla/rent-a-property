@@ -10,4 +10,8 @@ function priceFilter (propertyArr, price) {
    return propertyArr.filter(element=> element.price<=price);
 }
 
-export { locationFilter, dateFilter, priceFilter };
+function typeFilter (propertyArr, type) {
+   return type!==""? propertyArr.filter(element=> element.type===type) : propertyArr;
+}
+
+export { locationFilter, dateFilter, priceFilter, typeFilter };
