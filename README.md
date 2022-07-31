@@ -5,9 +5,9 @@ This is design test provided by the company Reunion.
 
 A live preview of the main branch can be seen at 
 
-[as1553-catfacts.netlify.app](https://as1553-catfacts.netlify.app)
+[as1553-estatery.netlify.app](https://as1553-estatery.netlify.app)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/51e2a241-bc66-4fdf-9be9-053d6e99bbd2/deploy-status)](https://app.netlify.com/sites/as1553-catfacts/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51e2a241-bc66-4fdf-9be9-053d6e99bbd2/deploy-status)](https://app.netlify.com/sites/as1553-estatery/deploys)
 
 # Features
 -Filters
