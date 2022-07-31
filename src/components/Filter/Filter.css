@@ -1,3 +1,7 @@
+.primary-link {
+    background-color: #7167eb;
+}
+
 .search-filter-container {
     margin-block-start: 2rem;
     margin-block-end: 2rem;
@@ -66,8 +70,6 @@ select {
     background-color: transparent;
     border: none;
     color: var(--blog-card-text-color);
-    /* padding-inline-start: 0.5rem;
-    padding-inline-end: 0.5rem; */
     padding-block-start: 0.9rem;
     padding-block-end: 0.9rem;
     cursor: pointer;
