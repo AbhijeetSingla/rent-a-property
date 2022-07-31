@@ -163,7 +163,7 @@ const data = {
     },
     {
       id: uuid(),
-      type: "Flat",
+      type: "House",
       state: "Florida",
       location: {
         address: "2622 Ridge Road",
