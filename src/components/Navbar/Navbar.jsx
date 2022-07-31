@@ -6,13 +6,13 @@ function Navbar() {
             <nav className="nav-base flex">
                 <a href='/' className="txt-decor-none">
                     <div className="primary-nav-logo flex">
-                        <img src={logo} alt="Navbar logo" width="50px" />
+                        <img src={logo} alt="Navbar logo" width="25px" />
                         <h3 >Estatery</h3>
                     </div>
                 </a>
                 <input type="checkbox" id='nav-toggle' className='nav-toggle d-none'/>
                 <ul className="list-style-none flex mobile-nav">
-                    <li>Rent</li>
+                    <li className='active-tab'>Rent</li>
                     <li>Buy</li>
                     <li>Sell</li>
                     <li>Manage Property</li>

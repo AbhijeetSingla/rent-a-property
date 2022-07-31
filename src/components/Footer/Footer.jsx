@@ -11,7 +11,7 @@ function Footer() {
             <li><a href="https://github.com/AbhijeetSingla" target="_blank" rel="noopener noreferrer"><img src={githubicon} alt="github" width="25px" height="25px" /></a></li>
             <li><a href="mailto:abhijeetsingla1553@gmail.com" ><img src={emailicon} alt="email" width="25px" height="25px" /></a></li>
         </ul>
-        <p>Copyright © 2022. Made by Abhijeet Singla</p>
+        <p>No Copyright © 2022. Made by Abhijeet Singla</p>
         </footer>
     );
 }

@@ -1,3 +1,7 @@
+.blog-card{
+    border-radius: 8px;
+}
+
 .stats {
     justify-content: center;
     --gap: 3.5rem;

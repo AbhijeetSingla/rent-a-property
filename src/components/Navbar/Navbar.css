@@ -1,3 +1,16 @@
+.nav-base {
+    background: var(--section-offwhite-color);
+    color: unset;
+}
+
+.primary-nav-logo {
+    --gap: 0.5rem;
+}
+
+.primary-nav-logo > h3 {
+    color: var(--blog-card-text-color);
+}
+
 .nav-base-link {
     color: var(--text-color);
     text-decoration: none;
@@ -9,6 +22,25 @@
     align-items: center;
 }
 
+.active-tab {
+    padding: 0.3rem 0.9rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+@media (prefers-color-scheme: light) {
+    .active-tab {
+        background-color: rgb(113 103 235 / 0.1);
+        color: var(--primary-base);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .active-tab {
+        background-color: rgb(255 255 255 / 0.1);
+    }
+}
+
 .mobile-nav-button{
     display: none;
 }
@@ -16,7 +48,6 @@
 @media (max-width: 35em) {
 
     .nav-base{
-        /* position:fixed; */
         z-index: 9999;
     }
 

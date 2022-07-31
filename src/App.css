@@ -1,3 +1,24 @@
 @import url(https://abhijeetsingla.netlify.app/css/styles.css);
 
 .flex-direction-column{flex-direction: column;}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-base: #7167eb;
+        --secondary-base: #7167eb;
+        --primary-hover: #FFE6E6;
+        --text-color: #ffffff;
+        --blog-card-text-color: #000000;
+        --primary-link-color: #7167eb;
+        --primary-link-text-color: var(--text-color);
+        --secondary-link-text-color: var(--primary-link-color);
+        --bg-color: #ffffff;
+        --nav-bg-color: hsl(0 0% 100% / 0.6);
+        --gradient-color: var(--bg-color);
+        --section-offwhite-color: #ebebeb;
+        --white-base: #FFFFFF;
+        --white-smoke-base: #EBEBEB;
+        --black-base: #000000;
+        --grey-fade: #c2c2c2;
+    }
+}
